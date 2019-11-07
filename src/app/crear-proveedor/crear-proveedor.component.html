@@ -1,0 +1,17 @@
+<form [formGroup]="formPro" (ngSubmit)="guardarPro()">
+    <div>
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" formControlName="nombre">
+    </div>
+    <div>
+        <label for="cif">CIF</label>
+        <input type="text" id="cif" formControlName="cif">
+    </div>
+    <div>
+        <label for="localidad">Localidad</label>
+        <input type="text" id="localidad" formControlName="localidad">
+    </div>
+    <div>
+        <button type="submit">Guardar</button>
+    </div>
+</form>
